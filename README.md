@@ -1,8 +1,9 @@
 # Tugas-Agate-TowerDefense
 
-Tower Defense Dilo
+## Tower Defense Dilo
 PROTECT YOU TOWER FROM THE ENEMY!
-Project features:
+
+## Fitur Project:
      1.	Character Movement
      2.	Audio
      3.	Win / Lose Condition
@@ -11,9 +12,13 @@ Project features:
      6.	Enemy Variant
      7.	Enemy Following Path
 
-Additional features :
+## Fitur Tambahan :
      1. Penggunaan Cost pada Tower
      2. Fixing Bug Tower yang bisa didouble
+
+## Gameplay Scene :
+
+
 
 
  
