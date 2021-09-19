@@ -1,7 +1,7 @@
 # Tugas-Agate-TowerDefense
 
 ## Tower Defense Dilo
-PROTECT YOU TOWER FROM THE ENEMY!
+Lindungi Markas dari Musuh dengan Tower
 
 ## Fitur Project:
      1.	Character Movement
@@ -20,6 +20,6 @@ PROTECT YOU TOWER FROM THE ENEMY!
 ![Untitlsed](https://user-images.githubusercontent.com/85096618/133926253-8d8d76b4-d757-4231-94f2-e2ca862050f9.png)
 
 ## How To run :
-   1. Just Extract Build.zip
+   1. Hanya extract build.zip pada releases
    2. Recommended untuk bermain dalam windowed mode karena tidak menu exit dalam game ini. 
  
