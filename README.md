@@ -18,9 +18,9 @@ PROTECT YOU TOWER FROM THE ENEMY!
 
 ## Gameplay Scene :
 
+ ![Untitlsed](https://user-images.githubusercontent.com/85096618/133926159-f62a73e9-b381-48b9-a911-6cff92bf65d4.png)
 
-
-
- 
-
+## How To run :
+   1. Just Extract Build.zip
+   2. Recommended untuk bermain dalam windowed mode karena tidak menu exit dalam game ini. 
  
