@@ -17,8 +17,7 @@ PROTECT YOU TOWER FROM THE ENEMY!
      2. Fixing Bug Tower yang bisa didouble
 
 ## Gameplay Scene :
-
- ![Untitlsed](https://user-images.githubusercontent.com/85096618/133926159-f62a73e9-b381-48b9-a911-6cff92bf65d4.png)
+![Untitlsed](https://user-images.githubusercontent.com/85096618/133926253-8d8d76b4-d757-4231-94f2-e2ca862050f9.png)
 
 ## How To run :
    1. Just Extract Build.zip
