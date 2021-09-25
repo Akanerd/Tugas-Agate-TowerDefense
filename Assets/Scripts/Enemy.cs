@@ -6,6 +6,11 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float _moveSpeed = 1f;
     [SerializeField] private SpriteRenderer _healthBar;
     [SerializeField] private SpriteRenderer _healthFill;
+    
+     private float _speedBeforeSlow;
+    private bool _isSlow;
+    private SpriteRenderer _sp;
+    public float _slowTime;
 
     private int _currentHealth;
 
@@ -15,8 +20,26 @@ public class Enemy : MonoBehaviour
     // Fungsi ini terpanggil sekali setiap kali menghidupkan game object yang memiliki script ini
     private void OnEnable()
     {
+        _speedBeforeSlow = _moveSpeed;
+        _isSlow = false;
+        _slowTime = 0;
+        _sp = this.GetComponent<SpriteRenderer>();
         _currentHealth = _maxHealth;
         _healthFill.size = _healthBar.size;
+    }
+    void Update()
+    {
+        if (_isSlow)
+            _slowTime -= Time.deltaTime;
+        _sp.color = Color.blue;
+
+        if (_slowTime <= 0)
+        {
+            _isSlow = false;
+            _moveSpeed = _speedBeforeSlow;
+            _slowTime = 0;
+            _sp.color = Color.white;
+        }
     }
 
     public void MoveToTarget()
@@ -75,6 +98,20 @@ public class Enemy : MonoBehaviour
 
         float healthPercentage = (float)_currentHealth / _maxHealth;
         _healthFill.size = new Vector2(healthPercentage * _healthBar.size.x, _healthBar.size.y);
+    }
+
+    public void ReduceEnemyHealth(int damage, float slow)
+    {
+        ReduceEnemyHealth(damage);
+        if (!_isSlow)
+        {
+            if (_moveSpeed == 1)
+                _moveSpeed /= 2;
+            else if (_moveSpeed > 1)
+                _moveSpeed -= slow;
+        }
+        _slowTime += 3f;
+        _isSlow = true;
     }
 
     // Menandai indeks terakhir pada path

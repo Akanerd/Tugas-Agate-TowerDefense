@@ -4,6 +4,7 @@ public class Bullet : MonoBehaviour
 {
     private int _bulletPower;
     private float _bulletSpeed;
+    private float _bulletSlow;
     private float _bulletSplashRadius;
 
     private Enemy _targetEnemy;
@@ -50,6 +51,11 @@ public class Bullet : MonoBehaviour
             {
                 LevelManager.Instance.ExplodeAt(transform.position, _bulletSplashRadius, _bulletPower);
             }
+            // Bullet yang memiliki efek Slow
+            else if (_bulletSlow > 0f)
+            {
+                _targetEnemy.ReduceEnemyHealth(_bulletPower, _bulletSlow);
+            }
             // Bullet yang hanya single-target
             else
             {
@@ -60,10 +66,11 @@ public class Bullet : MonoBehaviour
         }
     }
 
-    public void SetProperties(int bulletPower, float bulletSpeed, float bulletSplashRadius)
+    public void SetProperties(int bulletPower, float bulletSpeed, float bulletSplashRadius, float bulletSlow)
     {
         _bulletPower = bulletPower;
         _bulletSpeed = bulletSpeed;
+        _bulletSlow = bulletSlow;
         _bulletSplashRadius = bulletSplashRadius;
     }
 

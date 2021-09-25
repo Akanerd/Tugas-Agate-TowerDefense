@@ -14,6 +14,7 @@ public class Tower : MonoBehaviour
     [SerializeField] private float _shootDelay = 5f;
     [SerializeField] private float _bulletSpeed = 1f;
     [SerializeField] private float _bulletSplashRadius = 0f;
+    [SerializeField] private float _bulletSlow = 0f;
 
     [SerializeField] private Bullet _bulletPrefab;
 
@@ -78,7 +79,7 @@ public class Tower : MonoBehaviour
 
             Bullet bullet = LevelManager.Instance.GetBulletFromPool(_bulletPrefab);
             bullet.transform.position = transform.position;
-            bullet.SetProperties(_shootPower, _bulletSpeed, _bulletSplashRadius);
+            bullet.SetProperties(_shootPower, _bulletSpeed, _bulletSplashRadius,_bulletSlow);
             bullet.SetTargetEnemy(_targetEnemy);
             bullet.gameObject.SetActive(true);
 

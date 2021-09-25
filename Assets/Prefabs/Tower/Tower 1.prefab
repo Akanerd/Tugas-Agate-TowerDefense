@@ -48,6 +48,21 @@ PrefabInstance:
       propertyPath: _bulletSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3846772668527964085, guid: 53b4e8dfdc7210e48a866ff04c2dc702,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3846772668527964085, guid: 53b4e8dfdc7210e48a866ff04c2dc702,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3846772668527964085, guid: 53b4e8dfdc7210e48a866ff04c2dc702,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8276539823144955650, guid: 53b4e8dfdc7210e48a866ff04c2dc702,
         type: 3}
       propertyPath: m_LocalPosition.x

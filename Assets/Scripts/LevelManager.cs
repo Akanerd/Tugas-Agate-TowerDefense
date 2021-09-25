@@ -75,7 +75,7 @@ public class LevelManager : MonoBehaviour
         if (_runningDeploymentPointDelay <= 0f)
         {
             _currenttowerDeploymentPoint++;
-            _deploymentPointInfo.text = $"Deployment Point Tower : {Mathf.Max(_currenttowerDeploymentPoint, 0)}";
+            _deploymentPointInfo.text = $"Deployment Point  : {Mathf.Max(_currenttowerDeploymentPoint, 0)}";
             _runningDeploymentPointDelay = _deploymentPointDelay;
         }
 
