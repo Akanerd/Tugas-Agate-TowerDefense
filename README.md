@@ -15,7 +15,8 @@ Lindungi Markas dari Musuh dengan Tower
 
 ## Fitur Tambahan :
      1. Penambahan Deployment Point pada tower dengan cost tertentu pada tiap tower
-     2. Penambahan Slow Turret
+     2. Deployment Point tower dapat diubah pada level manager
+     3. Penambahan Slow Turret 
 
 ## Gameplay Scene :
 ![11](https://user-images.githubusercontent.com/85096618/134774842-cbacbce7-0e3a-41ab-8a68-0b0f3582b5c6.png)
