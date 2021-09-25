@@ -18,7 +18,8 @@ Lindungi Markas dari Musuh dengan Tower
      2. Penambahan Slow Turret
 
 ## Gameplay Scene :
-![Untitlsed](https://user-images.githubusercontent.com/85096618/133926253-8d8d76b4-d757-4231-94f2-e2ca862050f9.png)
+![11](https://user-images.githubusercontent.com/85096618/134774842-cbacbce7-0e3a-41ab-8a68-0b0f3582b5c6.png)
+
 
 ## How To run :
    1. Hanya extract build.zip pada releases
